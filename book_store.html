@@ -1,41 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Project">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Josif Vukicevic, Aleksa Mandic, Nikola Popovic">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Project">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Josif Vukicevic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png">
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Images/favicon.ico">
+  <link rel="stylesheet" href="style_for_filter_search.css">
 </head>
 
 <body>
 
-    <body>
-        <div class="header">
-            <a href="index.html" class="logo"><img src="Images/logo.jpg" class="logo_header"></a>
-            <div class="header-right">
-              <a href="index.html">Home</a>
-              <a class="active" href="book_store.html">Book store</a>
-              <a href="#">Libraries</a>
-              <a href="contact.html">Contact</a>
-              <a href="logIn.html">Log in | Sign up</a>
-            </div>
-          </div>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo"><img src="Images/logo.jpg" class="logo_header"></a>
+      <div class="header-right">
+        <a href="index.html">Home</a>
+        <a class="active" href="book_store.html">Book store</a>
+        <a href="#">Libraries</a>
+        <a href="contact.html">Contact</a>
+        <a href="logIn.html">Log in | Sign up</a>
+      </div>
+    </div>
 
+    <h2 class="available_books">Bookstore | Book gallery</h2>
 
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the book.." title="Type in a name">
 
-          
-          <footer>
-            <div class="footer-content">
-              <h3>Thank you for being part of our team!</h3>
-              
-              <p>Thank you for coming to this step. Contact us for any additional questions and explanations.</p>
-              <!--
+    <ul id="myUL">
+      <li><a href="#">Where the Crawdads Sing</a></li>
+      <li><a href="#">Too Much and Never Enough</a></li>
+
+      <li><a href="#">Midnight Sun</a></li>
+      <li><a href="#">Untamed</a></li>
+
+      <li><a href="#">Becoming</a></li>
+      <li><a href="#">A Promised Land</a></li>
+    </ul>
+
+    <h2 class="available_books">Available books and their prices</h2>
+
+    <table>
+      <tr>
+        <th>The name of the book</th>
+        <th>Available book</th>
+        <th>The price of the book</th>
+      </tr>
+      <tr>
+        <td>Where the Crawdads Sing</td>
+        <td>27 books available.</td>
+        <td>25€ | 28$</td>
+      </tr>
+      <tr>
+        <td>Too Much and Never Enough</td>
+        <td>14 books available.</td>
+        <td>42€ | 47$</td>
+      </tr>
+      <tr>
+        <td>Midnight Sun</td>
+        <td>34 books available.</td>
+        <td>25€ | 29$</td>
+      </tr>
+      <tr>
+        <td>Untamed</td>
+        <td>17 books available.</td>
+        <td>18€ | 23$</td>
+      </tr>
+      <tr>
+        <td>Becoming</td>
+        <td>35 books available.</td>
+        <td>12€ | 14$</td>
+      </tr>
+      <tr>
+        <td>A Promised Land</td>
+        <td>76 books available.</td>
+        <td>40€ | 50$</td>
+      </tr>
+    </table>
+
+    <h3 class="available_books">For any additional questions or explanations, please contact us via the contact form.
+      <br>Thank you for being our users on the site.</h3>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Thank you for being part of our team!</h3>
+
+        <p>Thank you for coming to this step. Contact us for any additional questions and explanations.</p>
+        <!--
                               <ul class="socials">
                                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -44,24 +100,26 @@
                                   <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                               </ul>
               -->
-        
-               <!-- Search button (Pretraga) -->
-              <input type="search" class="search" placeholder="Pretraga">
-              
-            </div>
-            <div class="footer-bottom">
-              <p>Copyright &copy; 2022 - All rights reserved. - <a href="index.html">books.me</a> </p>
-              <div class="footer-menu">
-                <ul class="f-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="book_store.html">Book store</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="logIn.html">Log in</a></li>
-                </ul>
-              </div>
-            </div>
-        
-          </footer>
-</body>
+
+        <!-- Search button (Pretraga) -->
+        <input type="search" class="search" placeholder="Pretraga">
+
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2022 - All rights reserved. - <a href="index.html">books.me</a> </p>
+        <div class="footer-menu">
+          <ul class="f-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book_store.html">Book store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="logIn.html">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script_for_filter_search.js"></script>
+  </body>
 
 </html>

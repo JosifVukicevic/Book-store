@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="description" content="Project">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Josif Vukicevic, Aleksa Mandic, Nikola Popovic">
+    <meta name="author" content="Josif Vukicevic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="style_for_log_in.css">
 
 </head>
 
@@ -26,8 +27,68 @@
               <a class="active" href="logIn.html">Log in | Sign up</a>
             </div>
           </div>
-
-
+          
+          <br>
+          <h1 class="center_center">Log in or Sign up</h1>
+          <br>
+          
+          <div class="center_form">
+          <div class="wrapper">
+            <div class="title-text">
+               <div class="title login">
+                  Login Form
+               </div>
+               <div class="title signup">
+                  Signup Form
+               </div>
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Login</label>
+                  <label for="signup" class="slide signup">Signup</label>
+                  <div class="slider-tab"></div>
+               </div>
+               <div class="form-inner">
+                  <form action="#" class="login">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                     </div>
+                     <div class="signup-link">
+                        Not a member? <a href="">Signup now</a>
+                     </div>
+                  </form>
+                  <form action="#" class="signup">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+        </div>
+        <br>
 
 
           <footer>
@@ -62,6 +123,8 @@
         </div>
     
       </footer>
+
+      <script src="script_for_log_in.js"></script>
 </body>
 
 </html>

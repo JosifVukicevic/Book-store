@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Project">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Josif Vukicevic, Aleksa Mandic, Nikola Popovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_for_contact.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Macondo&family=Playfair+Display:ital@1&family=Satisfy&family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="logo"><img src="Images/logo.jpg" class="logo_header"></a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="book_store.html">Book store</a>
+          <a href="#">Libraries</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a href="logIn.html">Log in | Sign up</a>
+        </div>
+      </div>
+
+    <h3 style="text-align: center; color: red;" class="animate__animated animate__heartBeat">Contact us for any additional questions or explanations.</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="montenegro">Montenegro</option>
+      <option value="serbia">Serbia</option>
+      <option value="croation">Croation</option>
+      <option value="albania">Albania</option>
+      <option value="macedonia">Macedonia</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<img src="Images/book_04.png" class="book_04">
+<h1 class="thank_you">Thank you!</h1>
+
+<footer>
+    <div class="footer-content">
+      <h3>Thank you for being part of our team!</h3>
+      
+      <p>Thank you for coming to this step. Contact us for any additional questions and explanations.</p>
+      <!--
+                      <ul class="socials">
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                      </ul>
+      -->
+
+       <!-- Search button (Pretraga) -->
+      <input type="search" class="search" placeholder="Pretraga">
+      
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2022 - All rights reserved. - <a href="index.html">books.me</a> </p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="book_store.html">Book store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="logIn.html">Log in</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

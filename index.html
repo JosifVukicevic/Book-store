@@ -1,11 +1,197 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovo je HTML strania</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Project">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Josif Vukicevic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Playfair+Display:ital@1&family=Satisfy&family=Square+Peg&display=swap"
+    rel="stylesheet">
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+  <div class="header">
+    <a href="index.html" class="logo"><img src="Images/logo.jpg" class="logo_header"></a>
+    <div class="header-right">
+      <a class="active" href="">Home</a>
+      <a href="book_store.html">Book store</a>
+      <a href="#">Libraries</a>
+      <a href="contact.html">Contact</a>
+      <a href="logIn.html">Log in | Sign up</a>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="heading_01">Welcome!</h1>
+    <h3 class="heading_01">We exist for you. The site was created for book lovers.
+      Here you can find all the information about the world's libraries
+      as well as the books they have.</h3>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <a href="library_01.html"><img src="Images/book_01.jpg" style="width:100%"></a>
+      <div class="text">Chateau de Chantilly Library, Šantiji, Francuska</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <a href="library_02.html"><img src="Images/book_02.jpg" style="width:100%"></a>
+      <div class="text">Stockholm Public Library, Stokholm</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <a href="library_03.html"><img src="Images/book_03.jpg" style="width:100%"></a>
+      <div class="text">Bodleian Library, Oksford, UK</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <h1 class="heading_01">Buy your favorite book!</h1>
+
+  <div class="box_one">
+    <div>
+      <img src="Images/buy_book01.png" class="image" alt="">
+      <h1>Where the Crawdads Sing</h1>
+      <p>The story follows two timelines that slowly intertwine. The first timeline describes the life and 
+        adventures of a young girl named Kya as she grows up isolated in the marsh of North Carolina 
+        from 1952 to 1969. The second timeline follows an investigation into the apparent murder of Chase Andrews, 
+        a local celebrity of Barkley Cove, a fictional coastal town of North Carolina.</p>
+    </div>
+    <div>
+      <img src="Images/buy_book02.jpg" class="imagess" alt="">
+      <h1>Too Much and Never Enough</h1>
+      <p>Too Much and Never Enough: How My Family Created the World's Most Dangerous Man is a tell-all 
+        book written by American psychologist Mary L. Trump about her uncle, former U.S. President Donald Trump, 
+        and his family. It was published by Simon & Schuster on July 14, 2020.</p>
+    </div>
+    <div>
+      <img src="Images/buy_book03.jpg" class="images" alt="">
+      <h1>Midnight Sun</h1>
+      <p>Midnight Sun is a 2020 companion novel to the 2005 book Twilight by author Stephenie Meyer. 
+        The work retells the events of Twilight from the perspective of Edward Cullen instead 
+        of that of the series' usual narrating character Bella Swan. Meyer stated that Twilight was 
+        to be the only book from the series that she planned to rewrite from Edward's perspective.</p>
+    </div>
+    <br>
+    <div>
+      <img src="Images/buy_book04.jpg" class="images" alt="">
+      <h1>Untamed</h1>
+      <p>Untamed is a 2020 memoir by Glennon Doyle. It was published by The Dial Press on March 10, 2020. 
+        It is her third memoir following her works Love Warrior and Carry on, Warrior. 
+        The book debuted at number one on The New York Times nonfiction best-seller list 
+        where it stayed for seven weeks. As of May 31, 2020, the book has spent 10 weeks on the list.</p>
+    </div>
+    <div>
+      <img src="Images/buy_book05.jpg" class="images" alt="">
+      <h1>Becoming</h1>
+      <p>Becoming is the memoir of former first lady of the United States Michelle Obama, published in 2018. 
+        Described by the author as a deeply personal experience, the book talks about her roots and 
+        how she found her voice, as well as her time in the White House, her public health campaign, 
+        and her role as a mother. The book is published by Crown and was released in 24 languages. 
+        One million copies were donated to First Book, an American nonprofit organization 
+        which provides books to children.</p>
+    </div>
+    <div>
+      <img src="Images/buy_book06.jpg" class="images" alt="">
+      <h1>A Promised Land</h1>
+      <p>The book has received many reviews and was put on end-of-year best of lists by The New York Times, 
+        The Washington Post, and The Guardian. Commercially, it has been extremely successful and, 
+        as of the February 7, 2021 issue, the book has been the New York Times best-seller 
+        in non-fiction for ten consecutive weeks.</p>
+    </div>
+  </div>
+
+  <!-- Read more - modal window -->
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Read more</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 class="heading_center">Visit our bookstore.</h2>
+      </div>
+      <div class="modal-body">
+        <p>We present you with the six best-selling works this year, while on our "Bookstore" page you can find all the new works of famous writers. You can also order a book via the page or read it in pdf format. The price of the book depends on the option he chooses.
+          For all additional questions and explanations, contact us via the contact form and our admins will answer you as soon as possible.</p>
+        <p>Thank you for being part of our community!</p>
+        <p><a href="book_store.html">Visit our bookstore!</a></p>
+      </div>
+      <div class="modal-footer">
+        <h3></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Thank you for being part of our team!</h3>
+
+      <p>Thank you for coming to this step. Contact us for any additional questions and explanations.</p>
+      <!--
+                          <ul class="socials">
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                          </ul>
+          -->
+
+      <!-- Search button (Pretraga) -->
+      <input type="search" class="search" placeholder="Pretraga">
+
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2022 - All rights reserved. - <a href="index.html">books.me</a> </p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="book_store.html">Book store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="logIn.html">Log in</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript files -->
+  <script src="script.js"></script>
+  <script src="script_for_modal_window.js"></script>
+
 </body>
+
 </html>
